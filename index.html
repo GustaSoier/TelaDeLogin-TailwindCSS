@@ -1,35 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Login - TailwindCSS</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tela de Login - TailwindCSS</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="dist/output.css">
-</head>
+        <!-- CSS -->
+        <link rel="stylesheet" href="dist/output.css">
+    </head>
 
-<body>
+    <body class="h-screen w-screen flex items-center justify-center bg-gray-100">
 
-    <div>
-        <h2>Login</h2>
-
-        <div>
+        <div class="w-80">
             <div>
-                <label for="email">E-mail</label>
-                <input type="text" id="email">
+                <h2 class="font-bold text-center text-lg mb-4 bg-blue-900 py-4 text-white">Login</h2>
             </div>
 
-            <div>
-                <label for="password">Senha</label>
-                <input type="text">
-            </div>
+            <div class="bg-white shadow-md rounded-md p-6 space-y-4">
+                <div>
+                    <label
+                        for="email"
+                        class="block text-md text-gray-800 mb-2 font-medium">
+                        E-mail:</label>
+                    <input
+                        id="email"
+                        type="text"
+                        class="bg-gray-50 w-full border border-gray-300 focus:border-blue-500 rounded focus:ring-2 focus:ring-blue-500 focus:ring-opacity-20 px-3 py-2 text-md text-gray-800 placeholder-gray-300 focus:outline-none transition duration-200 ease-in-out"
+                        >
+                </div>
 
-            <div>
-                <button>Lojgin</button>
+                <div>
+                    <label
+                        for="password"
+                        class="block text-md text-gray-800 mb-2 font-medium"
+                        >Senha:</label>
+                    <input
+                        id="password"
+                        type="text"
+                        class="bg-gray-50 w-full border border-gray-300 focus:border-blue-500 rounded focus:ring-2 focus:ring-blue-500 focus:ring-opacity-20 px-3 py-2 text-md text-gray-800 placeholder-gray-300 focus:outline-none transition duration-200 ease-in-out"
+                        >
+                </div>
+
+                <div>
+                        <a href="" class="text-sm text-red-600 hover:underline">
+                            Esqueci minha senha
+                        </a>
+                </div>
+
+                <div>
+                    <button class="w-full text-sm bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded text-white shadow">Login</button>
+                </div>
             </div>
         </div>
-    </div>
-    
-</body>
+
+    </body>
 </html>
